@@ -26,7 +26,8 @@ const App = () => {
       console.log("클릭");
       setLoading(true);
       // 서버 API 호출 (URL은 실제 서버 주소에 맞게 수정)
-      const response = await axios.get(`http://obesity-app.r-e.kr/api/admin/logs`, {
+      // const response = await axios.get(`http://obesity-app.r-e.kr/api/admin/logs`, {
+      const response = await axios.get('api/admin/logs', {
         params: {
           startDate,
           endDate
